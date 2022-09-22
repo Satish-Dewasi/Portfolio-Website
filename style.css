@@ -1,0 +1,188 @@
+@import 'utilites.css';
+:root{
+  --primary : #3DCFD3;
+  --dark :#161616;
+  --pure :#FFFFFF;
+  --ternary : 898989;
+  --light :F2F2F2;
+}
+
+ header {
+    background: var(--dark);
+    clip-path :polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+
+ }
+
+ body{
+   font-family: 'Poppins', sans-serif;
+ }
+
+*{
+   padding :0;
+   margin: 0;
+   box-sizing: border-box;
+   -webkit-font-smotthing: antialiased;
+}
+.container {
+  max-width: 1152px;
+  padding: 0,15px;
+  margin: auto;
+
+}
+
+header nav .left a{
+
+  color: var(--pure);
+  text-decoration: none;
+  margin-right: 2rem;
+  text-transform: uppercase;
+}
+header nav .left a:hover{
+   color: var(--primary);
+   transition: all .3s ease;
+}
+
+header nav{
+  padding: 2rem 0;
+
+}
+
+header nav .Branding{
+  margin-right: 3rem;
+}
+.hero{
+  padding:3rem 0;
+
+
+}
+.hero .left img {
+  width: 400px;
+
+}
+
+.hero .right {
+  color: var(--pure);
+  margin: -7rem;
+
+}
+
+.hero .right h6{
+   font-size: 1.6rem;
+   color: var(--primary);
+   margin-bottom: 0.5rem;
+
+}
+
+.hero .right h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.hero .right h1 span{
+   color: var(--primary);
+}
+
+.hero .right p{
+   line-height: 1.9;
+   margin: 2rem;
+}
+
+section{
+
+  padding: 6rem 0;
+}
+.about-me-img{
+  height:450px;
+}
+.about h1{
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+
+}
+
+.about h1 span{
+  color:var(--primary);
+}
+
+.about h3{
+  font-size: 20;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+.about p{
+  font-family: 'Lato', sans-serif;
+    color: #706860;
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+
+ .about .social{
+   display: flex;
+
+ }
+
+ .about .social a{
+    background: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    margin-top: 0.8rem
+    transition: all .9s ease;
+ }
+
+.about .social a:hover{
+     background: #ADD8E6;
+
+  }
+
+.about .social a img{
+  width: 100%;
+  height: 100%;
+  padding: 0.2rem;
+}
+
+.section-heading{
+  color: var(--pure);
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: o.5;
+}
+
+section.freelancer{
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../image/camera.png);
+  color: var(--pure);
+  clip-path :polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
+  padding-bottom: 10rem;
+}
+
+section.freelancer h1{
+font-size: 2rem;
+margin-bottom: 0.5rem;
+
+
+
+}
+section.freelancer p{
+margin-bottom: 2rem;
+font-family: 'Lato',sans-serif;
+}
+
+section.blog{
+  background: var(--pure);
+
+}
+
+section.blog.card-wrapper{
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
